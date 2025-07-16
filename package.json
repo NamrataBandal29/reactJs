@@ -1,0 +1,23 @@
+{
+  "name": "ep01",
+  "version": "1.0.0",
+  "description": "test project",
+  "main": "App.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NamrataBandal29/reactJs.git"
+  },
+  "keywords": [],
+  "author": "namrata bandal",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NamrataBandal29/reactJs/issues"
+  },
+  "homepage": "https://github.com/NamrataBandal29/reactJs#readme",
+  "dependencies": {
+    "parcel": "^2.15.4"
+  }
+}
