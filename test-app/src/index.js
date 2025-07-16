@@ -30,8 +30,88 @@ const Handling1 = () =>{
   </div>
 }
 
+
+
+/*
+- Header 
+  - logo
+  -navitem
+    - home
+    - menu
+    - about us
+-body
+ -search
+ -reasCart
+
+-footer
+ - 
+
+
+
+
+*/
+
+const AppLayout = () => {
+  return(<div className='appLayOut'>
+    <HeaderReas />
+    <Body />
+  </div>
+  )
+}
+
+const HeaderReas = () => {
+  return (<div className ="headerReas">
+    <div className ="header-logo">
+      <img className='header-logo-img' alt='no' src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQey8fdvSx3FakG_12g-8hGXqH9PGdBqtd5g2Cm52MW23TUBjMGgXI9a-ixQU1D-roh3HQ&usqp=CAU' />
+    </div>
+    <div className ="header-nav-item">
+      <ul className='ul'>
+        <li>Home</li>
+        <li>Contact us</li>
+        <li>About us</li>
+        <li>Cart</li>
+      </ul>
+    </div>
+  </div>)
+}
+
+const Body = () =>{
+  return (
+    <div className='body'>
+      <div className='search'>Search</div>
+      <div className='reasContaner'>
+        <RestCard />
+        <RestCard />
+        <RestCard />
+        <RestCard />
+        <RestCard />
+        <RestCard />
+        <RestCard />
+        <RestCard />
+        <RestCard />
+        <RestCard />
+      </div>
+    </div>
+    
+  )
+}
+
+const restCardStyle = ({backgroundColor:'pink'});
+
+const RestCard = () =>{
+  return(
+    <div className = "rest-card" style={{backgroundColor:'pink'}}>
+      <img className='rest-food-img' alt = 'rest-img' src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQey8fdvSx3FakG_12g-8hGXqH9PGdBqtd5g2Cm52MW23TUBjMGgXI9a-ixQU1D-roh3HQ&usqp=CAU' />
+      <h3>Test Foods</h3>
+      <h4>foods</h4>
+      <h4>4.5 </h4>
+      <h4>30 min </h4>
+    </div>
+  )
+}
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(<Handling1 />
+root.render(<AppLayout />
   // <React.StrictMode>
   //   <App />
   // </React.StrictMode>
